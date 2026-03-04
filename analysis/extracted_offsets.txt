@@ -1,0 +1,82 @@
+Extracted Offsets and Detected Embedded Components
+Target: C9200_9300_9400_9500_9600_cat9k_iosxe.16.12.07.SPA.bin
+
+Binwalk identified embedded components:
+
+1) GZIP compressed data
+   Offset (hex): 0x487B
+   Offset (dec): 18555
+   Notes: Embedded compressed payload segment.
+
+2) Initramfs archive (CPIO)
+   Offset (hex): 0x4E9A20
+   Offset (dec): 5151264
+   Filename: initramfs.x86_64.cat9k.ramfs.cpio
+   Notes: Boot initialization filesystem (initramfs layer).
+
+3) SquashFS filesystem
+   Offset: (detected by binwalk; large filesystem layer)
+   Notes: Primary compressed filesystem containing IOS-XE package set (.pkg) + packages.conf.
+
+
+Embedded Payload Carving Offset
+Target: cat9k-rpbase.16.12.07.SPA.pkg
+
+Custom signature scanner (Go) identified an embedded SquashFS-related marker:
+
+- SquashFS-related marker offset (hex): 0x1A742280
+  Notes: Manual dd carving confirmed multiple XZ-compressed segments in this region.
+
+
+Automated Package Signature Scanner Output (Examples)
+Target: cat9k-rpbase.16.12.06.SPA.pkg
+Package size: 536,691,716 bytes (~512 MB)
+
+Detected signatures (examples):
+
+- SquashFS marker
+  Offset (hex): 0x404
+  Offset (dec): 1028
+
+- XZ compressed segment
+  Offset (hex): 0x464
+  Offset (dec): 1124
+
+- XZ compressed payload
+  Offset (hex): 0xAE60
+  Offset (dec): 44640
+
+- GZIP compressed segment
+  Offset (hex): 0xDD14
+  Offset (dec): 56596
+
+- XZ compressed payload
+  Offset (hex): 0x1A388
+  Offset (dec): 107400
+
+- GZIP compressed component
+  Offset (hex): 0x1A669
+  Offset (dec): 108137
+
+- GZIP compressed component
+  Offset (hex): 0x1D2A1
+  Offset (dec): 119457
+
+- GZIP compressed component
+  Offset (hex): 0x20DD8
+  Offset (dec): 134616
+
+- XZ compressed payload
+  Offset (hex): 0x22FC8
+  Offset (dec): 143304
+
+
+Compression Header Anomaly (Carved GZIP Fragments)
+
+Observed: GZIP-like fragments contain magic bytes "1f 8b 08"
+However, standard decompression failed.
+
+file output indicated:
+"gzip compressed data, reserved method 236, encrypted"
+
+Notes: GZIP method identifier 236 is non-standard (not DEFLATE=8), suggesting proprietary wrapping/modification inside the .pkg container.
