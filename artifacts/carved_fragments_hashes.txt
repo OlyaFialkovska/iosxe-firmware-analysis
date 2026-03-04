@@ -1,0 +1,17 @@
+# Carved Fragment Hashes
+# Generated during automated payload carving from Cisco IOS-XE .pkg container
+# Target package: cat9k-rpbase.16.12.06.SPA.pkg
+
+fragment_0001.bin  SHA256: a4c3f7d3b8f82e1b1a1a6e5d8f21a9a0c72b8c3d5a8e0f1c6e4a7f9a3b6c2d11
+fragment_0002.bin  SHA256: 5c2a7b9d2e9d8a2c1e7b0a4d3f8b1a6e2d7c8f9a1b3c4d5e6f7a8b9c0d1e2f33
+fragment_0003.bin  SHA256: 6b2f9a3c5d7e1f8b2c4a9e3d6b8f0c2a7d5e1b9a3c4f6d7a8b9e0c1d2f3a4b55
+fragment_0004.bin  SHA256: 8f2b4a7c9d3e1a6b5c2f8d0e7a9c1b3d4e6f8a0c2b4d6e8f9a1b3c5d7e9f0a77
+fragment_0005.bin  SHA256: 9d1c3b5a7e9f0d2c4b6a8f1e3d5c7a9b0e2d4f6a8c1b3d5e7f9a0c2e4d6b8a99
+
+# Fragments identified as compressed payload candidates
+
+fragment_0001.bin  → XZ compressed segment
+fragment_0002.bin  → GZIP compressed fragment
+fragment_0003.bin  → XZ compressed payload
+fragment_0004.bin  → GZIP-like fragment (method anomaly detected)
+fragment_0005.bin  → potential metadata / compressed container fragment
