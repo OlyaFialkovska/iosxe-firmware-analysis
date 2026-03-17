@@ -1,0 +1,7 @@
+Firmware Metadata Values
+========================
+CW_FAMILY = cat9k
+CW_IMAGE = cat9k_iosxe.16.12.06.SPA.bin
+CW_VERSION = 16.12.06
+CW_FULL_VERSION = 16.12.06.0.6353.1630828309..Gibraltar
+CW_DESCRIPTION = Cisco IOS Software, IOS-XE Software

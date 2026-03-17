@@ -1,0 +1,34 @@
+Firmware Header Section Map
+==========================
+
+Firmware size: 823865016 bytes
+Header size: 4096 bytes
+
+Found sections:
+Section: KEY_TLV_PACKAGE_COMPATIBILITY | Offset: 0x98 | Size: 29 bytes
+Section: KEY_TLV_PACKAGE_BOOTARCH | Offset: 0xD4 | Size: 24 bytes
+Section: KEY_TLV_BOARD_COMPAT | Offset: 0x10C | Size: 20 bytes
+Section: KEY_TLV_CRYPTO_KEYSTRING | Offset: 0x140 | Size: 24 bytes
+Section: CW_BEGIN | Offset: 0x174 | Size: 8 bytes
+Section: CW_FAMILY | Offset: 0x188 | Size: 9 bytes
+Section: CW_IMAGE | Offset: 0x1A4 | Size: 8 bytes
+Section: CW_VERSION | Offset: 0x1D4 | Size: 10 bytes
+Section: CW_FULL_VERSION | Offset: 0x1F4 | Size: 15 bytes
+Section: CW_DESCRIPTION | Offset: 0x234 | Size: 14 bytes
+Section: CW_END | Offset: 0x270 | Size: 6 bytes
+
+Approximate section ranges:
+KEY_TLV_PACKAGE_COMPATIBILITY -> 0x98 - 0xD3 (60 bytes)
+KEY_TLV_PACKAGE_BOOTARCH -> 0xD4 - 0x10B (56 bytes)
+KEY_TLV_BOARD_COMPAT -> 0x10C - 0x13F (52 bytes)
+KEY_TLV_CRYPTO_KEYSTRING -> 0x140 - 0x173 (52 bytes)
+CW_BEGIN -> 0x174 - 0x187 (20 bytes)
+CW_FAMILY -> 0x188 - 0x1A3 (28 bytes)
+CW_IMAGE -> 0x1A4 - 0x1D3 (48 bytes)
+CW_VERSION -> 0x1D4 - 0x1F3 (32 bytes)
+CW_FULL_VERSION -> 0x1F4 - 0x233 (64 bytes)
+CW_DESCRIPTION -> 0x234 - 0x26F (60 bytes)
+CW_END -> 0x270 - 0xFFF (3472 bytes)
+
+Boundary checks:
+All section boundary checks passed

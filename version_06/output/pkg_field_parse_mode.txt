@@ -1,0 +1,5 @@
+PKG Field Parse Mode
+====================
+Chosen start offset: 0x2
+Chosen length mode: little-endian
+Parsed fields: 2

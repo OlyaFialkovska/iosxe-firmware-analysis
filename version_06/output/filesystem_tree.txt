@@ -1,0 +1,14 @@
+Filesystem Tree
+===============
+- / | size=416 | type=directory
+  - .pkginfo | size=600 | type=file
+  - cat9k-cc_srdriver.16.12.06.SPA.pkg | size=20001804 | type=file
+  - cat9k-espbase.16.12.06.SPA.pkg | size=88962056 | type=file
+  - cat9k-guestshell.16.12.06.SPA.pkg | size=1684488 | type=file
+  - cat9k-rpbase.16.12.06.SPA.pkg | size=536691716 | type=file
+  - cat9k-sipbase.16.12.06.SPA.pkg | size=31253512 | type=file
+  - cat9k-sipspa.16.12.06.SPA.pkg | size=60158980 | type=file
+  - cat9k-srdriver.16.12.06.SPA.pkg | size=30725128 | type=file
+  - cat9k-webui.16.12.06.SPA.pkg | size=12923908 | type=file
+  - cat9k-wlc.16.12.06.SPA.pkg | size=9220 | type=file
+  - packages.conf | size=6648 | type=file

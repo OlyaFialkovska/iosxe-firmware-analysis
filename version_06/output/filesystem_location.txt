@@ -1,0 +1,8 @@
+Filesystem Location Report
+========================
+Firmware image: input/C9200_9300_9400_9500_9600_cat9k_iosxe.16.12.06.SPA.bin
+Firmware size: 823865016 bytes
+Filesystem offset: 0x27DCEB8
+Filesystem size (bytes_used): 782063827
+SquashFS version: 4.0
+Block size: 131072
