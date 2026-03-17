@@ -1,0 +1,8 @@
+Firmware Structure
+---
+- firmware.bin | offset=0x0 | size=824113401 | type=firmware container
+  - top-level metadata | offset=0x174 | size=258 | type=header metadata | family=cat9k, image=cat9k_iosxe.16.12.07.SPA.bin, version=16.12.07
+  - component | offset=0x1000 | size=8192 | type=Unknown binary component
+  - pkg_header | offset=0x1000 | size=4096 | type=pkg header analysis | parsed 2 pkg binary fields starting at local offset 0x2 using little-endian length
+    - pkg_field_1 | offset=0x1002 | size=6 | type=pkg binary field | tag=0xB8, length=6
+    - pkg_field_2 | offset=0x100B | size=45 | type=pkg binary field | tag=0xE7, length=45

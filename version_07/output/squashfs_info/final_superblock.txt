@@ -1,0 +1,15 @@
+SquashFS Superblock
+---
+Offset: 0x27D88F9
+Version: 4.0
+Compression: 4
+Block size: 131072
+Block log: 17
+Inodes: 12
+Fragments: 1
+Bytes used: 782328423
+Root inode: 0x3401FC8
+Inode table start: 0x2EA15B20
+Directory table start: 0x2EA16042
+Fragment table start: 0x2EA1614E
+Lookup table start: 0x2EA161B8

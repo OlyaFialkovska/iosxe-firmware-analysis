@@ -1,0 +1,6 @@
+PKG Parsed Fields
+---
+Base offset: 0x1000
+
+Field 1 | field_offset=0x1002 | tag=0xB8 | length=6 | preview=fPfh
+Field 2 | field_offset=0x100B | tag=0xE7 | length=45 | preview=fh`<fff`<fRfh.ffYf[f

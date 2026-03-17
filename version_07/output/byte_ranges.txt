@@ -1,0 +1,6 @@
+Firmware Byte Ranges
+---
+0x00000000 - 0x00000FFF |         4096 bytes | firmware header
+0x00001000 - 0x027D88F8 |     41777401 bytes | boot/loader or non-filesystem region
+0x027D88F9 - 0x311EEB5F |    782328423 bytes | SquashFS filesystem
+0x311EEB60 - 0x311EF8F8 |         3481 bytes | trailing area / padding / footer region

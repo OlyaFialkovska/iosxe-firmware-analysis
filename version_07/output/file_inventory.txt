@@ -1,0 +1,14 @@
+Extracted File Inventory
+---
+path=/ | size=416 | type=directory
+path=/.pkginfo | size=600 | type=file
+path=/cat9k-cc_srdriver.16.12.07.SPA.pkg | size=20005900 | type=file
+path=/cat9k-espbase.16.12.07.SPA.pkg | size=88998920 | type=file
+path=/cat9k-guestshell.16.12.07.SPA.pkg | size=1684488 | type=file
+path=/cat9k-rpbase.16.12.07.SPA.pkg | size=536744964 | type=file
+path=/cat9k-sipbase.16.12.07.SPA.pkg | size=31286280 | type=file
+path=/cat9k-sipspa.16.12.07.SPA.pkg | size=60195844 | type=file
+path=/cat9k-srdriver.16.12.07.SPA.pkg | size=30815240 | type=file
+path=/cat9k-webui.16.12.07.SPA.pkg | size=12923908 | type=file
+path=/cat9k-wlc.16.12.07.SPA.pkg | size=9220 | type=file
+path=/packages.conf | size=6648 | type=file
